@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        function rentalCarCost(numberOfDays) 
+        {
+            var costPerDay=40;
+            var totalAmount=costPerDay*numberOfDays;
+            var discountFor3OrMoreDays=20;
+            var discountFor7OrMoreDays=50;
+            if(numberOfDays>=3 && numberOfDays<7)
+            {
+                totalAmount=(totalAmount-discountFor3OrMoreDays);
+            }
+            else if(numberOfDays>=7)
+            {
+                totalAmount=(totalAmount-discountFor7OrMoreDays);
+            }
+            return totalAmount;
+        }
+        console.log(rentalCarCost(1));
+        console.log(rentalCarCost(5));
+        console.log(rentalCarCost(8));
+    </script>
+  </head>
+ <body></body>
+</html>
